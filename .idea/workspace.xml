@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="77fb6256-dda0-40b3-a6f2-edfee014a679" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1mx923H9U31U3aPbfAuQUlE6YFI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="com.emergingit.bot.apiquery.ApiParser" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="com.emergingit.bot.apiquery.ApiParser" />
+      <recent name="com.emergingit.bot.apiquery.ParameterGenerator" />
+      <recent name="com.emergingit.bot.queryprocessor.WeatherInfoQueryProcessor" />
+      <recent name="com.emergingit.bot.queryprocessor.GreetingsQueryProcessor" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.emergingit.bot.apiquery" />
+      <recent name="com.emergingit.bot.queryprocessor" />
+      <recent name="com.emergingit.bot.stringmatcher" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BotApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APIParserTest.testSendRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmergingITScreening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emergingit.bot.apiquery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.emergingit.bot.apiquery" />
+      <option name="MAIN_CLASS_NAME" value="com.emergingit.bot.apiquery.APIParserTest" />
+      <option name="METHOD_NAME" value="testSendRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GreetingsQueryProcessorTest.testGetAns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmergingITScreening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emergingit.bot.queryprocessor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.emergingit.bot.queryprocessor" />
+      <option name="MAIN_CLASS_NAME" value="com.emergingit.bot.queryprocessor.GreetingsQueryProcessorTest" />
+      <option name="METHOD_NAME" value="testGetAns" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherAPIParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmergingITScreening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emergingit.bot.apiquery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.emergingit.bot.apiquery" />
+      <option name="MAIN_CLASS_NAME" value="com.emergingit.bot.apiquery.WeatherAPIParserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherAPIParserTest.testgetTemp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmergingITScreening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emergingit.bot.apiquery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.emergingit.bot.apiquery" />
+      <option name="MAIN_CLASS_NAME" value="com.emergingit.bot.apiquery.WeatherAPIParserTest" />
+      <option name="METHOD_NAME" value="testgetTemp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherInfoQueryProcessorTest.testSetStringProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmergingITScreening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emergingit.bot.queryprocessor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.emergingit.bot.queryprocessor" />
+      <option name="MAIN_CLASS_NAME" value="com.emergingit.bot.queryprocessor.WeatherInfoQueryProcessorTest" />
+      <option name="METHOD_NAME" value="testSetStringProcessor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EmergingITScreening" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.emergingit.bot.BotApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GreetingsQueryProcessorTest.testGetAns" />
+        <item itemvalue="JUnit.WeatherInfoQueryProcessorTest.testSetStringProcessor" />
+        <item itemvalue="JUnit.WeatherAPIParserTest" />
+        <item itemvalue="JUnit.WeatherAPIParserTest.testgetTemp" />
+        <item itemvalue="JUnit.APIParserTest.testSendRequest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77fb6256-dda0-40b3-a6f2-edfee014a679" name="Default Changelist" comment="" />
+      <created>1610424168306</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610424168306</updated>
+      <workItem from="1610424169632" duration="9088000" />
+      <workItem from="1610446915855" duration="8489000" />
+      <workItem from="1610467670279" duration="17299000" />
+      <workItem from="1610506571254" duration="5388000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/emergingit/bot/stringmatcher/EditDistanceStringMatcherTest.java</url>
+          <line>11</line>
+          <properties class="com.emergingit.bot.stringmatcher.EditDistanceStringMatcherTest" method="matchString">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/emergingit/bot/stringprocessor/StringProcessor.java</url>
+          <line>25</line>
+          <properties class="com.emergingit.bot.stringprocessor.StringProcessor" method="onlyAlphaNumeric">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/emergingit/bot/apiquery/APIParserTest.java</url>
+          <line>16</line>
+          <properties class="com.emergingit.bot.apiquery.APIParserTest" method="testSendRequest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bot$WeatherAPIParserTest.ic" NAME="WeatherAPIParserTest Coverage Results" MODIFIED="1610483857133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.emergingit.bot.apiquery.*</FILTER>
+    </SUITE>
+  </component>
+</project>
