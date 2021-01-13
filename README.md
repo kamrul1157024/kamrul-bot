@@ -1,4 +1,20 @@
-# kamrul-bot
+### kamrul-bot
+
+
+
+## Make Rest API request:
+I tried to make as much as softmatching possible :
+#Greetings: 
+```bash
+https://kamrul-bot.herokuapp.com/greetings?q=how are you
+```
+```bash
+https://kamrul-bot.herokuapp.com/greetings?q=what is your name
+```
+
+
+
+
 
 File Structure :
 ```bash
@@ -58,3 +74,4 @@ File Structure :
                             EditDistanceStringMatcherTest.java
                            
 ```
+
