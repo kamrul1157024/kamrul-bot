@@ -11,6 +11,16 @@ https://kamrul-bot.herokuapp.com/greetings?q=how are you
 ```bash
 https://kamrul-bot.herokuapp.com/greetings?q=what is your name
 ```
+```bash
+https://kamrul-bot.herokuapp.com/greetings?q=good    morning !
+```
+
+### Weather Info
+```bash
+https://kamrul-bot.herokuapp.com/greetings?q=what is the weather of Dhaka?
+```
+
+
 
 
 
