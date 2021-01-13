@@ -4,7 +4,7 @@
 
 ## Make Rest API request:
 I tried to make as much as softmatching possible :
-#Greetings: 
+# Greetings: 
 ```bash
 https://kamrul-bot.herokuapp.com/greetings?q=how are you
 ```
