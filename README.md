@@ -17,11 +17,23 @@ https://kamrul-bot.herokuapp.com/greetings?q=good    morning !
 
 ### Weather Info
 ```bash
-https://kamrul-bot.herokuapp.com/greetings?q=what is the weather of Dhaka?
+https://kamrul-bot.herokuapp.com/weather?q=what is the weather of Dhaka?
+```
+```bash
+https://kamrul-bot.herokuapp.com/weather?q=Is there any possibility of rain in dhaka?
+```
+```bash
+https://kamrul-bot.herokuapp.com/weather?q=what is the windspeed of Dhaka?
+```
+```bash
+https://kamrul-bot.herokuapp.com/weather?q=what is the humidity of lahore?
 ```
 
-
-
+### Basic World Affairs
+Currently Working on that
+```bash
+https://kamrul-bot.herokuapp.com/qa?q=Who is the president of Bangladesh?
+```
 
 
 
