@@ -15,7 +15,6 @@
     <description>Rest Api Gateway For answering questions</description>
 
     <properties>
-        <java.version>11</java.version>
     </properties>
 
     <dependencies>
