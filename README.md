@@ -12,7 +12,7 @@ https://kamrul-bot.herokuapp.com/greetings?q=how are you
 https://kamrul-bot.herokuapp.com/greetings?q=what is your name
 ```
 ```bash
-https://kamrul-bot.herokuapp.com/greetings?q=good    morning !
+https://kamrul-bot.herokuapp.com/greetings?q=good morning !
 ```
 
 ### Weather Info
