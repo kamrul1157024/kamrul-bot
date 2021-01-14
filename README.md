@@ -39,7 +39,7 @@ https://kamrul-bot.herokuapp.com/qa?q=Who is the president of Bangladesh?
 
 
 ## File Structure :
-```bash
+```bash   
 ├───main
 │   ├───java
 │   │   └───com
@@ -48,23 +48,25 @@ https://kamrul-bot.herokuapp.com/qa?q=Who is the president of Bangladesh?
 │   │               │   BotApplication.java
 │   │               │   BotController.java
 │   │               │   Configuration.java
-│   │               │
+│   │               │   
 │   │               ├───apiquery
 │   │               │       APIParser.java
 │   │               │       ParameterGenerator.java
 │   │               │       WeatherAPIParser.java
-│   │               │
+│   │               │       
 │   │               ├───cache
 │   │               │       Cache.java
 │   │               │       LRUCache.java
-│   │               │
+│   │               │       RefreshableCache.java
+│   │               │       
 │   │               ├───exception
 │   │               │       APICallFailedException.java
+│   │               │       CityNameNotFoundException.java
 │   │               │       NotFoundOnCacheException.java
-│   │               │
+│   │               │       
 │   │               ├───json
 │   │               │       JSONCreator.java
-│   │               │
+│   │               │       
 │   │               ├───queryprocessor
 │   │               │       BasicWorldAffairQueryProcessor.java
 │   │               │       ErrorQueryProcessor.java
@@ -72,17 +74,17 @@ https://kamrul-bot.herokuapp.com/qa?q=Who is the president of Bangladesh?
 │   │               │       QueryAnswerInJSON.java
 │   │               │       QueryProcessor.java
 │   │               │       WeatherInfoQueryProcessor.java
-│   │               │
+│   │               │       
 │   │               ├───stringmatcher
 │   │               │       EditDistanceStringMatcher.java
 │   │               │       StringMatcher.java
-│   │               │
+│   │               │       
 │   │               └───stringprocessor
 │   │                       StringProcessor.java
-│   │
+│   │                       
 │   └───resources
 │       │   application.properties
-│       │
+│       │   
 │       ├───static
 │       └───templates
 └───test
@@ -91,19 +93,20 @@ https://kamrul-bot.herokuapp.com/qa?q=Who is the president of Bangladesh?
             └───emergingit
                 └───bot
                     │   BotApplicationTests.java
-                    │
+                    │   
                     ├───apiquery
                     │       APIParserTest.java
                     │       ParameterGeneratorTest.java
                     │       WeatherAPIParserTest.java
-                    │
+                    │       
                     ├───cache
                     │       LRUCacheTest.java
-                    │
+                    │       
                     ├───queryprocessor
                     │       GreetingsQueryProcessorTest.java
                     │       WeatherInfoQueryProcessorTest.java
-                    │
+                    │       
                     └───stringmatcher
-                            EditDistanceStringMatcherTest.java```
-
+                            EditDistanceStringMatcherTest.java
+                            
+```
