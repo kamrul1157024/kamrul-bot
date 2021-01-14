@@ -47,13 +47,22 @@ https://kamrul-bot.herokuapp.com/qa?q=Who is the president of Bangladesh?
 │   │           └───bot
 │   │               │   BotApplication.java
 │   │               │   BotController.java
+│   │               │   Configuration.java
 │   │               │
 │   │               ├───apiquery
 │   │               │       APIParser.java
 │   │               │       ParameterGenerator.java
 │   │               │       WeatherAPIParser.java
 │   │               │
-│   │               ├───JSON
+│   │               ├───cache
+│   │               │       Cache.java
+│   │               │       LRUCache.java
+│   │               │
+│   │               ├───exception
+│   │               │       APICallFailedException.java
+│   │               │       NotFoundOnCacheException.java
+│   │               │
+│   │               ├───json
 │   │               │       JSONCreator.java
 │   │               │
 │   │               ├───queryprocessor
@@ -88,12 +97,13 @@ https://kamrul-bot.herokuapp.com/qa?q=Who is the president of Bangladesh?
                     │       ParameterGeneratorTest.java
                     │       WeatherAPIParserTest.java
                     │
+                    ├───cache
+                    │       LRUCacheTest.java
+                    │
                     ├───queryprocessor
                     │       GreetingsQueryProcessorTest.java
                     │       WeatherInfoQueryProcessorTest.java
                     │
                     └───stringmatcher
-                            EditDistanceStringMatcherTest.java
-                           
-```
+                            EditDistanceStringMatcherTest.java```
 
