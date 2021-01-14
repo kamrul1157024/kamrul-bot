@@ -1,8 +1,6 @@
 package com.emergingit.bot;
 
-import com.emergingit.bot.JSON.JSONCreator;
 import com.emergingit.bot.queryprocessor.*;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,15 +15,6 @@ public class BotController {
     BasicWorldAffairQueryProcessor basicWorldAffairQueryProcessor;
 
 
-
-
-    QueryAnswerInJSON queryAnswerInJSON;
-
-
-    @Autowired
-    public void setQueryAnswerInJSON(QueryAnswerInJSON queryAnswerInJSON) {
-        this.queryAnswerInJSON = queryAnswerInJSON;
-    }
     @Autowired
     public void setGreetingsQueryProcessor(GreetingsQueryProcessor greetingsQueryProcessor) {
         this.greetingsQueryProcessor = greetingsQueryProcessor;
@@ -53,14 +42,14 @@ public class BotController {
     public String greetingsQuery(@RequestParam String q)
     {
 
-        return queryAnswerInJSON.getAnsInJSON(greetingsQueryProcessor,q);
+        return QueryAnswerInJSON.getAnsInJSON(greetingsQueryProcessor,q);
     }
 
     @RequestMapping("/weather")
     @ResponseBody
     public String weatherQuery(@RequestParam String q)
     {
-        return queryAnswerInJSON.getAnsInJSON(weatherInfoQueryProcessor,q);
+        return QueryAnswerInJSON.getAnsInJSON(weatherInfoQueryProcessor,q);
     }
 
     @RequestMapping("/qa")
@@ -68,7 +57,7 @@ public class BotController {
     public String basicWorldAffairQuery(@RequestParam String q)
     {
 
-        return queryAnswerInJSON.getAnsInJSON(basicWorldAffairQueryProcessor,q);
+        return QueryAnswerInJSON.getAnsInJSON(basicWorldAffairQueryProcessor,q);
     }
 
 

@@ -1,6 +1,7 @@
 package com.emergingit.bot.queryprocessor;
 
 
+import com.emergingit.bot.Configuration;
 import com.emergingit.bot.apiquery.WeatherAPIParser;
 import com.emergingit.bot.stringmatcher.StringMatcher;
 import com.emergingit.bot.stringprocessor.StringProcessor;
@@ -32,6 +33,7 @@ public class WeatherInfoQueryProcessor implements QueryProcessor {
     public void setWeatherAPIParser(WeatherAPIParser weatherAPIParser) {
         this.weatherAPIParser = weatherAPIParser;
     }
+
     private String matchInformation(String[] words_for_matching,String question) throws Exception
     {
         String[] words=question.split(" ");
@@ -40,7 +42,7 @@ public class WeatherInfoQueryProcessor implements QueryProcessor {
         {
             for(String word:words)
             {
-                if(stringMatcher.matchString(word,word_in_matcher,2))
+                if(stringMatcher.matchString(word,word_in_matcher, Configuration.TOLERANCE_FOR_WORD_MATCHING))
                 {
                     return word_in_matcher;
                 }
@@ -81,7 +83,7 @@ public class WeatherInfoQueryProcessor implements QueryProcessor {
     private HashMap<String,String> extractInformation(String question)
     {
         String[] time_word={"today"};
-        String[] information_about= {"temperature","humidity","pressure","windspeed"};
+        String[] information_about= {"temperature","humidity","pressure","windspeed","wind"};
         String[] information_outside={"rain","clouds","clear"};
 
         HashMap<String,String> informations=new HashMap<>();
@@ -140,7 +142,7 @@ public class WeatherInfoQueryProcessor implements QueryProcessor {
                 Integer pressure=weatherAPIParser.getPressure();
                 return Integer.toString(pressure)+"Pa";
             }
-            else if(informations.get("information_about").equals("windspeed"))
+            else if(informations.get("information_about").equals("windspeed") || informations.get("information_about").equals("wind"))
             {
                 Double windspeed=weatherAPIParser.getWindspeed();
                 return Double.toString(Math.round(windspeed))+" m/s";
@@ -171,6 +173,7 @@ public class WeatherInfoQueryProcessor implements QueryProcessor {
                 .applyOn(question)
                 .makeLowerCase()
                 .onlyAlphaNumeric()
+                .removeGreetings()
                 .getString();
 
         HashMap<String,String> informations=extractInformation(asked_question);

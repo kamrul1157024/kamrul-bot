@@ -1,4 +1,4 @@
-package com.emergingit.bot.JSON;
+package com.emergingit.bot.json;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

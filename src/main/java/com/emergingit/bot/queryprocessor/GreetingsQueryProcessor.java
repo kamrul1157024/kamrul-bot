@@ -1,5 +1,6 @@
 package com.emergingit.bot.queryprocessor;
 
+import com.emergingit.bot.Configuration;
 import com.emergingit.bot.stringmatcher.StringMatcher;
 import com.emergingit.bot.stringprocessor.StringProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +44,7 @@ public class GreetingsQueryProcessor implements QueryProcessor {
         String default_answer="Hello,Corona!, I  am a bot what can i do for you?";
         try {
             for (String question_bot_know : possibleQuestions.keySet()) {
-                if (stringMatcher.matchString(question_bot_know, question, 7)) {
+                if (stringMatcher.matchString(question_bot_know, question, Configuration.TOLERANCE_FOR_SENTENCE_MATCHING)) {
                     answer= possibleQuestions.get(question_bot_know);
                     break;
                 }

@@ -10,9 +10,6 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class WeatherAPIParserTest extends WeatherAPIParser {
 
-    public WeatherAPIParserTest(@Autowired APIParser apiParser) {
-        super(apiParser);
-    }
 
     @BeforeEach
     void setUp()
