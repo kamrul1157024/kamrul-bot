@@ -3,6 +3,7 @@ package com.emergingit.bot.queryprocessor;
 
 import com.emergingit.bot.Configuration;
 import com.emergingit.bot.apiquery.WeatherAPIParser;
+import com.emergingit.bot.exception.CityNameNotFoundException;
 import com.emergingit.bot.stringmatcher.StringMatcher;
 import com.emergingit.bot.stringprocessor.StringProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -123,7 +124,12 @@ public class WeatherInfoQueryProcessor implements QueryProcessor {
 
     private String getInformations(HashMap<String,String> informations)
     {
-        weatherAPIParser.setCityName(informations.get("city"));
+        try {
+            weatherAPIParser.setCityName(informations.get("city"));
+        } catch (CityNameNotFoundException e) {
+            e.printStackTrace();
+            return "City not found!";
+        }
 
         if(informations.get("question_type").equals("what"))
         {

@@ -1,5 +1,6 @@
 package com.emergingit.bot.apiquery;
 
+import com.emergingit.bot.exception.CityNameNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +13,7 @@ class WeatherAPIParserTest extends WeatherAPIParser {
 
 
     @BeforeEach
-    void setUp()
-    {
+    void setUp() throws CityNameNotFoundException {
         setCityName("dhaka");
     }
 

@@ -6,15 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4dd979ca-1eec-4119-9aab-4fba7ebcbe5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/BotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/BotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/JSON/JSONCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/json/JSONCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/apiquery/APIParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/apiquery/APIParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/apiquery/WeatherAPIParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/apiquery/WeatherAPIParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/queryprocessor/GreetingsQueryProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/queryprocessor/GreetingsQueryProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/queryprocessor/QueryAnswerInJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/queryprocessor/QueryAnswerInJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/Cache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/LRUCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/queryprocessor/WeatherInfoQueryProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/queryprocessor/WeatherInfoQueryProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/apiquery/APIParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/apiquery/APIParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/apiquery/WeatherAPIParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/apiquery/WeatherAPIParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/cache/LRUCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/cache/LRUCacheTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +103,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LRUCacheTest.testLRUCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emergingit.bot.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.emergingit.bot.cache" />
+      <option name="MAIN_CLASS_NAME" value="com.emergingit.bot.cache.LRUCacheTest" />
+      <option name="METHOD_NAME" value="testLRUCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LRUCacheTest.testRefreshableCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emergingit.bot.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.emergingit.bot.cache" />
+      <option name="MAIN_CLASS_NAME" value="com.emergingit.bot.cache.LRUCacheTest" />
+      <option name="METHOD_NAME" value="testRefreshableCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.emergingit.bot.BotApplication" />
@@ -114,6 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LRUCacheTest.testRefreshableCache" />
+        <item itemvalue="JUnit.LRUCacheTest.testLRUCache" />
         <item itemvalue="JUnit.LRUCacheTest.TestLRUCache" />
       </list>
     </recent_temporary>
@@ -127,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610515705861</updated>
       <workItem from="1610515708587" duration="1100000" />
-      <workItem from="1610605342997" duration="6535000" />
+      <workItem from="1610605342997" duration="12310000" />
     </task>
     <servers />
   </component>
@@ -150,11 +182,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/emergingit/bot/cache/LRUCacheTest.java</url>
-          <line>10</line>
-          <properties class="com.emergingit.bot.cache.LRUCacheTest" method="TestLRUCache">
+          <line>19</line>
+          <properties class="com.emergingit.bot.cache.LRUCacheTest" method="testRefreshableCache">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

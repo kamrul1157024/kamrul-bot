@@ -4,6 +4,7 @@ import com.emergingit.bot.Configuration;
 import com.emergingit.bot.cache.Cache;
 import com.emergingit.bot.cache.LRUCache;
 import com.emergingit.bot.exception.APICallFailedException;
+import com.emergingit.bot.exception.CityNameNotFoundException;
 import com.emergingit.bot.exception.NotFoundOnCacheException;
 import org.springframework.boot.json.JsonParser;
 import org.springframework.boot.json.JsonParserFactory;
@@ -23,11 +24,11 @@ public class WeatherAPIParser extends APIParser {
 
     public WeatherAPIParser()
     {
-        cache=new LRUCache<>(Configuration.WEATHER_CACHE_SIZE);
+        cache=new LRUCache<>(Configuration.Weather.CACHE_SIZE,Configuration.Weather.CACHE_REFRESH_TIME_IN_SECONDS);
     }
 
 
-    public void setCityName(String city_name)
+    public void setCityName(String city_name) throws CityNameNotFoundException
     {
         this.city_name=city_name;
 
@@ -40,7 +41,7 @@ public class WeatherAPIParser extends APIParser {
                 String response=makeApiCall();
                 this.response = convert(response);
             } catch (APICallFailedException apiCallFailedException) {
-                apiCallFailedException.printStackTrace();
+                throw new CityNameNotFoundException();
             }
 
             cache.put(city_name,this.response);
@@ -53,13 +54,13 @@ public class WeatherAPIParser extends APIParser {
     private String makeApiCall() throws APICallFailedException
     {
         ParameterGenerator parameterGenerator=new ParameterGenerator();
-        weather_api_url =parameterGenerator
+        String current_weather_api_url =parameterGenerator
                 .toTheUrl(weather_api_url)
                 .setParameter("q",city_name)
                 .setParameter("appid",apiKey)
                 .getUrl();
         try {
-            return sendRequest(weather_api_url);
+            return sendRequest(current_weather_api_url);
         } catch (APICallFailedException e) {
             e.printStackTrace();
         }
