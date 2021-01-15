@@ -35,7 +35,10 @@ Currently Working on that
 https://kamrul-bot.herokuapp.com/qa?q=Who is the president of Bangladesh?
 ```
 
-
+python code test consistency of API sending multiple request a time [response_test.py](https://gist.github.com/kamrul1157024/414254eb4896b20aebe551ade25579fe)
+```
+python response_test.py <number_of_request> http://localhost:9090/weather?q=what%20is%20Humidiy%20in%20Dhaka?
+```
 
 
 ## File Structure :
