@@ -33,18 +33,18 @@ public class WeatherAPIParser extends APIParser {
         this.city_name=city_name;
 
         try {
-            cache.get(city_name);
+            this.response=cache.get(city_name);
         } catch (NotFoundOnCacheException cacheException) {
 
 
             try {
                 String response=makeApiCall();
                 this.response = convert(response);
+                cache.put(city_name,this.response);
             } catch (APICallFailedException apiCallFailedException) {
                 throw new CityNameNotFoundException();
             }
 
-            cache.put(city_name,this.response);
 
         }
 

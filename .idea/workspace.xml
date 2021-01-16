@@ -10,8 +10,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/apiquery/WeatherAPIParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/apiquery/WeatherAPIParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/Cache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/queryprocessor/WeatherInfoQueryProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/queryprocessor/WeatherInfoQueryProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/apiquery/WeatherAPIParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/apiquery/WeatherAPIParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/cache/LRUCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/cache/LRUCacheTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,15 +72,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BotApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,7 +155,11 @@
       <option name="presentableId" value="Default" />
       <updated>1610515705861</updated>
       <workItem from="1610515708587" duration="1100000" />
-      <workItem from="1610605342997" duration="12310000" />
+      <workItem from="1610605342997" duration="12913000" />
+      <workItem from="1610645809759" duration="2030000" />
+      <workItem from="1610721172088" duration="20000" />
+      <workItem from="1610732158940" duration="626000" />
+      <workItem from="1610768995022" duration="1813000" />
     </task>
     <servers />
   </component>
@@ -176,6 +176,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

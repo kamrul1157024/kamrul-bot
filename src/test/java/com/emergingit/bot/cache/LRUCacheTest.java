@@ -17,13 +17,14 @@ class LRUCacheTest {
         assertEquals(y,"Y");
     }
     @Test
-    void testRefreshableCache() throws InterruptedException {
+    void testRefreshableCache() throws InterruptedException, NotFoundOnCacheException {
         Cache<String,String> cache=new LRUCache<>(3,2);
-        for(char i='A';i<='Z';i++) {
-            cache.put(Character.toString(i),Character.toString(i));
-           // Thread.sleep(1000);
-            System.out.println(cache);
-        }
+       cache.put("dhaka","30");
+       cache.put("london","2");
+       cache.put("jakarta","5");
+        System.out.println(cache.get("dhaka"));
+        System.out.println(cache.get("london"));
+       System.out.println(cache);
     }
 
 

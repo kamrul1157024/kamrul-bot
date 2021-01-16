@@ -59,11 +59,11 @@ public class LRUCache<X,Y> implements Cache<X,Y> ,RefreshableCache{
     public String toString()
     {
         if(is_refreshable) refreshCache();
-        return map.toString();
+        return map.toString() + queue.toString()+timestamp.toString();
     }
 
     @Override
-    public void put(X key, Y value) {
+    public synchronized void put(X key, Y value) {
         queue.add(key);
         timestamp.add(getCurrentTimeInSeconds());
         if(queue.size()>this.size_of_cache)
@@ -78,7 +78,6 @@ public class LRUCache<X,Y> implements Cache<X,Y> ,RefreshableCache{
     public Y get(X key) throws NotFoundOnCacheException {
 
         if(is_refreshable) refreshCache();
-
         Y value = map.get(key);
         queue.add(queue.poll());
 
