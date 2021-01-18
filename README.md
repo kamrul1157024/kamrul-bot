@@ -39,6 +39,9 @@ https://kamrul-bot.herokuapp.com/qa?q=Who is the president of Bangladesh?
 ```
 python response_test.py <number_of_request> http://localhost:9090/weather?q=what%20is%20Humidiy%20in%20Dhaka?
 ```
+### Sending 10 Request simultaneously 
+![img](https://i.ibb.co/Bwzj13X/image.png)
+
 
 
 ## File Structure :
