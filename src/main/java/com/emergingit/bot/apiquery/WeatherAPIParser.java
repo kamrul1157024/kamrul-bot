@@ -16,7 +16,7 @@ import java.util.Map;
 public class WeatherAPIParser extends APIParser {
 
     private String city_name;
-    private final String apiKey="6d849a6807f1a20970f0051beaac2099";
+    private final String apiKey="caf34d5a408c9986a4e4ab0a0548b637";
     private String weather_api_url ="https://api.openweathermap.org/data/2.5/weather";
     private Map<String,Object> response;
     Cache<String,Map<String,Object>> cache;

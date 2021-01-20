@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4dd979ca-1eec-4119-9aab-4fba7ebcbe5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/BotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/BotController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/apiquery/WeatherAPIParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/apiquery/WeatherAPIParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/Cache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emergingit/bot/cache/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/cache/LRUCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/emergingit/bot/cache/LRUCacheTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,6 +45,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -67,17 +67,27 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\JAVA\EmergingITScreening\src\main\resources" />
+      <recent name="F:\JAVA\EmergingITScreening\src\main\java\com\emergingit\bot\trie" />
+      <recent name="F:\JAVA\EmergingITScreening\src\main\resources\static" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.emergingit.bot.trie" />
       <recent name="com.emergingit.bot.cache" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BotApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
+    <configuration name="CityTrieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emergingit.bot.trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.emergingit.bot.trie" />
+      <option name="MAIN_CLASS_NAME" value="com.emergingit.bot.trie.CityTrieTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CityTrieTest" />
         <item itemvalue="JUnit.LRUCacheTest.testRefreshableCache" />
         <item itemvalue="JUnit.LRUCacheTest.testLRUCache" />
         <item itemvalue="JUnit.LRUCacheTest.TestLRUCache" />
@@ -159,7 +170,9 @@
       <workItem from="1610645809759" duration="2030000" />
       <workItem from="1610721172088" duration="20000" />
       <workItem from="1610732158940" duration="626000" />
-      <workItem from="1610768995022" duration="1813000" />
+      <workItem from="1610768995022" duration="6400000" />
+      <workItem from="1610856752479" duration="71000" />
+      <workItem from="1611063626674" duration="704000" />
     </task>
     <servers />
   </component>

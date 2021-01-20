@@ -61,6 +61,14 @@ public class BotController {
     }
 
 
+    @RequestMapping("/error")
+    @ResponseBody
+    public String onError()
+    {
+        return "error";
+    }
+
+
 
 
 
